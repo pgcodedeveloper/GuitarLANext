@@ -9,11 +9,12 @@ import 'sweetalert2/dist/sweetalert2.all';
 
 const Producto = ({producto,agregarCarrito}) => {
 
+    const [ cantidad, setCantidad ] = useState(0);
     if(producto[0] == null){
         return (<Page404 />)
     }
 
-    const [ cantidad, setCantidad ] = useState(0);
+    
     const { descripcion , imagen, nombre, precio} = producto[0].attributes;
 
 
