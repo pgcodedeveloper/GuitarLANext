@@ -1,0 +1,84 @@
+.cards{
+    padding: 2rem;
+    border-radius: 10px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+    transition: border-radius cubic-bezier(0.075, 0.82, 0.165, 1) .5s,
+    transform cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+}
+.cards:hover {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    transform: scale(1.02);
+}
+.cards img{
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+.contenido{
+    padding: 2rem;
+}
+
+.contenido h3{
+    font-weight: 400;
+    font-size: 2.8rem;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.fecha{
+    color: var(--primary);
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+}
+.fecha::after{
+    content: '';
+    display: block;
+    width: 30%;
+    height: 1.5px;
+    margin: 0 auto;
+    background-color: var(--primary);
+}
+.enlace 
+{
+    margin-top: 2rem;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--negro);
+    border: 2px solid #17C3B2;
+    padding: 1rem 5rem;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: .2s;
+}
+
+.enlace:hover {
+    background-color: #17C3B2;
+    color: var(--blanco);
+}
+
+/* Nuevas popiedades de css para cortar un texto despues de pasadas cierta cantidad de lieneas*/
+.resumen{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+/* Entrada del Blog*/
+
+.entrada{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.texto{
+    white-space: pre-wrap;
+}

@@ -1,0 +1,48 @@
+
+@media (min-width: 768px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 2rem;
+    }
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .contenido{
+        grid-column: 2 / 3;
+    }
+}
+
+.contenido p{
+    color: white;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.enlace{
+    display: block;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--negro);
+    border: 2px solid #17C3B2;
+    padding: 1rem 3rem;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: .2s;
+    color: white;
+}
+
+.enlace:hover{
+    background-color: #17C3B2;
+    color: var(--blanco);
+}
